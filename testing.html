@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Studying Javascript</title>
+        <meta charset="utf-8" lang="en-US">
+        <style>
+            #animecontainer {
+                width: 400px;
+                height: 400px;
+                position: relative;
+                background-color: grey;
+            }
+            #animate {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="animecontainer">
+            <div id="animate"></div>
+        </div>"
+        <button onclick="anime()">Animate</button>
+
+        <h1>Studying Javascript</h1>
+        <p id="js1">Studying stuff</p>
+        <button type="button" onclick="changeText()">Change the text</button>
+
+        <p>Input Validation</p>
+        <p>Enter a number between 1 and 3</p>
+        <input id="validate" type="text">
+        <button type="button" onclick="validate()">Validate Input</button>
+        <p id="error"></p>
+        <p id="finally"></p>
+
+        <form name="myForm" action="" onsubmit="return validateForm()" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name">
+            <input type="submit" value="Submit">
+        </form>
+
+        <input id="test" type="number" max="5" min="1" required>
+        <button onclick="test1()">OK</button>
+
+        <div id="tricks">
+            <button type="button" onclick="window.print()">Print the page</button>
+            <p id="changeDate">Today's date is...?</p>
+            <button type="button" onclick="document.getElementById('changeDate').innerHTML = Date()">Click to see today's date!</button>
+            <p onclick="this.style.color='red'">Turn me red!</p>
+        </div>
+
+        <script src="studying.js"></script>
+    </body>
+</html>
